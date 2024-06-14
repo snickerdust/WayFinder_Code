@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.png') }}" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+</head>
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                WayFinder!
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Popular</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#explore" class="nav__link">Explore</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+        
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <img src="static/img/home-bg.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home_subtitle">
+                        Welcome to WayFinder!
+                    </h3>
+
+                    <h1 class="home__title">
+                        Discover the <br>
+                        Beauty and Adventure <br>
+                        of East Java
+                    </h1>
+
+                    <p class="home_description">
+                        Live the trips exploring the world, discover 
+                        paradises, islands, mountains and much
+                        more, get your trip now!
+                    </p>
+
+                    <a href="#" class="button">
+                        Start Your Journey <i class="ri-arrow-right-line"></i>
+                    </a>
+                    </div>
+                    
+
+                    <div class="home__cards grid">
+                        <article class="home__card">
+                            <img src="static/img/home-sby.jpg" alt="home image" class="home__card-img">
+                            <h3 class="home__card-title">Surabaya</h3>
+                            <div class="home__card-shadow"></div>
+                        </article>
+
+                        <article class="home__card">
+                            <img src="static/img/home-malang.jpg" alt="home image" class="home__card-img">
+                            <h3 class="home__card-title">Malang</h3>
+                            <div class="home__card-shadow"></div>
+                        </article>
+
+                        <article class="home__card">
+                            <img src="static/img/home-bwi.jpg" alt="home image" class="home__card-img">
+                            <h3 class="home__card-title">Banyuwangi</h3>
+                            <div class="home__card-shadow"></div>
+                        </article>
+
+                        <article class="home__card">
+                            <img src="static/img/home-sawah.jpg" alt="home image" class="home__card-img">
+                            <h3 class="home__card-title">More!</h3>
+                            <div class="home__card-shadow"></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">
+                        We Suggest You <br>
+                        To Go There!
+                    </h2>
+
+                    <p class="about__description">
+                        Discover our top recommendations based on our expert model. 
+                        From exquisite dining experiences to charming cafes and breathtaking tourist attractions, 
+                        we guide you to the best places to visit and enjoy
+                    </p>
+
+                    <a href="#/output" class="button">
+                        Explore East Java <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="about__image">
+                    <img src="static/img/about-ijen.jpg" alt="about image" class="about__img">
+                    <div class="about__shadow">
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== POPULAR ====================-->
+         <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Enjoy The Beauty <br>
+                Of The World
+            </h2>
+            
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="static/img/popular-rest.jpg" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        Restaurant
+                    </h2>
+
+                    <div class="popular__location">
+                        <span>Experience culinary excellence at our top-rated restaurant, where fresh ingredients and innovative dishes come together to create unforgettable meals.</span>
+                    </div>
+                </article>  
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="static/img/popular-cafe.jpg" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        Cafe
+                    </h2>
+
+                    <div class="popular__location">
+                        <span>Relax and unwind at our cozy café, the perfect spot for a morning coffee or an afternoon tea, offering a serene ambiance and delightful treats</span>
+                    </div>
+                </article> 
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="static/img/popular-tourist.jpg" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        Tourist Attraction
+                    </h2>
+
+                    <div class="popular__location">
+                        <span>Discover breathtaking views and adventurous trails at this stunning tourist attraction, an ideal destination for nature lovers and explorers</span>
+                    </div>
+                </article>   
+            </div>
+         </section>
+
+         <!--==================== EXPLORE ====================-->
+         <section class="explore section" id="explore">
+            <div class="explore__container">
+                <div class="explore__image">
+                    <img src="static/img/explore-beach.jpg" alt="explore image" class="explore_img">
+                    <div class="explore__shadow"></div>
+                </div>
+
+                <div class="explore__content container grid">
+                    <div class="explore__data">
+                        <h2 class="section__title">
+                            Explore The <br>
+                            Best Paradises
+                        </h2>
+
+                        <p class="explore__description">
+                            Exploring paradises such as islands and 
+                            valleys when traveling the world is one of
+                            the greatest experiences when you travel, it
+                            offers you harmony and peace and you
+                            can enjoy it with great comfort.
+                        </p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== INPUT ====================-->
+         <section class="input section" id="input">
+            <div class="input__container">
+                <div class="input__content container grid">
+                    <h2 class="input__title">
+                        Enter Your Location
+                    </h2>
+                    <div id="map"></div>
+                    <form id="recommendation-form" class="mt-3">
+                        <div class="form-group">
+                            <label for="location">Enter the location:</label>
+                            <input type="text" class="form-control" id="location" name="location">
+                        </div>
+                        <button id="current-location-btn" autocomplete="geolocation">Use my current location</button>
+                        <div class="form-group">
+                            <label for="radius">Enter the radius in meters:</label>
+                            <input type="number" class="form-control" id="radius" name="radius" value="5000" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== OUTPUT ====================-->
+        <section class="output section" id="output">
+            <!-- Trip Planner -->
+            <h2 class="section__title">Your Trip Plan</h2>
+            <div id="trip-planner" class="trip-planner-container">
+                <!-- Trip Planner will be injected here -->
+            </div>
+            <h2 class="output__title">Recommendations For You!</h2>
+            <div id="recommendations" class="recommendations-container">
+                <!-- Recommendations will be injected here -->
+            </div>
+        </section>
+    
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+      
+    
+</body>
+</html>
